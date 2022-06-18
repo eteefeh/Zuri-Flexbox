@@ -5,43 +5,62 @@
     <meta name="viewport" content="width=device-width" />
     <title>Grid</title>
     <style>
-        .total > div {
-            display: grid;
-            grid-template-columns: 2fr 3fr ;
-            grid-column-gap: 1em;
-            background-color: orangered;
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: grey;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+      }
+      main {
+        display: grid;
+        grid-template-areas: 
+        'a a b'
+        'c d d'
+        'c e e'
+        ;
+        gap: 15px;
+        width: 50%;
+        margin: auto;
+      }
+      main div {
+        padding: 4em;
+        text-align: center;
 
-        }
-
+      }
+      .item-a {
+        background-color: orangered;
+        grid-area: a;
+        height: 100px;
+      }
+      .item-b {
+        background-color: orange;
+        grid-area: b;
+      }
+      .item-c {
+        background-color: rgb(61, 148, 61);
+        grid-area: c;
+      }
+      .item-d {
+        background-color: rgb(72, 173, 236);
+        grid-area: d;
+      }
+      .item-e {
+        background-color: rgb(72, 173, 236);
+        grid-area: e;
+      }
     </style>
-    </head>
-    <body>
-        <div class="total">
-            <div class = "first">
-                I love Zuri training.
-
-
-            </div>
-            <div>
-                I love Zuri training.
-
-            </div>
-            <div>
-                I love Zuri training.
-
-
-            </div>
-            <div>
-                I love Zuri training.
-
-
-            </div>
-            <div>
-                I love Zuri training.
-
-
-            </div>
-        </div>
-
-    </body>
+  </head>
+  <body>
+    <main>
+      <div class="item-a"> </div>
+      <div class="item-b"> </div>
+      <div class="item-c"> </div>
+      <div class="item-d"> </div>
+      <div class="item-e"> </div>
+    </main>
+  </body>
 </html>
