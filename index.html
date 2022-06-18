@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Grid</title>
+    <style>
+      body {
+        background-color: hsl(0, 0%, 95%);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main {
+        width: 50%;
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .all-content {
+        display: flex;
+        padding: 100px;
+      }
+      .all-content h3 {
+        font-weight: 700;
+      }
+      .all-content p {
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: 15px;
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 400;
+      }
+      .all-content .first-part {
+        background-color: hsl(31, 77%, 52%);
+        padding: 2em;
+      }
+      .second-part {
+        background-color: hsl(184, 100%, 22%);
+        padding: 2em;
+      }
+      .third-part {
+        background-color: hsl(179, 100%, 13%);
+        padding: 2em;
+      }
+      .first {
+        color: hsl(31, 77%, 52%);
+      }
+      .second {
+        color: hsl(184, 100%, 22%);
+      }
+      .third {
+        color: hsl(179, 100%, 13%);
+      }
+      input {
+        background-color: hsl(0, 0%, 95%);
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="all-content">
+        <div class="first-part">
+          <img src="icon-sedans.svg" alt="Sedans" />
+          <h3>SEDANS</h3>
+          <p>
+            Choose a sedan for its affordability ad excellent fuel economy.
+            Ideal for cruising in the city or on your net road trip.
+          </p>
+          <input name="Submit" type="button" value="Learn more" class="first" />
+        </div>
+        <div class="second-part">
+          <img src="icon-suvs.svg" alt="Suvs" />
+          <h3>SUVS</h3>
+          <p>
+            Take an SUV for its spacious interior, power, an versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+          <input
+            name="Submit"
+            type="button"
+            value="Learn more"
+            class="second"
+          />
+        </div>
+        <div class="third-part">
+          <img src="icon-luxury.svg" alt="Luxury" />
+          <h3>LUXURY</h3>
+          <p>
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+          <input name="Submit" type="button" value="Learn more" class="third" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
